@@ -1,9 +1,13 @@
+$black: #3A3835;
+$yellow: #E1AD64;
+$turq: #74A5AF;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    color: #3A3835;
+    color: $black;
 }
 
 a{
@@ -12,6 +16,10 @@ a{
 
 ul{
     list-style: none;
+}
+
+.d-flex{
+    display: flex;
 }
 
 .container{
@@ -44,6 +52,7 @@ nav ul{
 
 main{
     margin-top: 60px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     picture{
@@ -53,9 +62,148 @@ main{
         flex: 7;
     }
 }
+
+.section-margin{
+    margin-bottom: 200px;
+}
+
 h1{
     font-size: 82px;
     max-width: 600px;
     line-height: 1.1em;
     margin-top: 85px;
+}
+
+.overTitle{
+    color: $black;
+    opacity: 60%;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    font-size:62px;
+    line-height: 1em;
+    margin-bottom: 40px;
+    &::after{
+        content: '';
+        display: inline-block;
+        margin-left: 6px;
+        width: 10px;
+        height: 10px;
+        background: $yellow;
+    }
+}
+
+.exp-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    justify-content: space-between;
+    h3{
+        font-size: 28px;
+        font-weight: bold;
+        &::after{
+            content: '';
+            display: block;
+            width: 90px;
+            height: 6px;
+            background: $yellow;
+            margin-bottom: 10px;
+        }
+    }
+    .card{
+        margin: 10px;
+        max-width: 442px;
+        p{
+            opacity: 85%;
+            margin-bottom: 10px;
+            height: 76px;
+        }
+        
+    }
+}
+
+.exp-actions{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    div{
+        background: #DFDFDF;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 2px 1px rgba($color: #000000, $alpha: .16);
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+.card{
+    background-color: #F7F6F3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .16);
+    position: relative;
+    transition: .2s;
+    &:hover{
+        transition: .2s;
+        box-shadow: 1px 5px 6px rgba($color: #000000, $alpha: .16);
+    }
+}
+
+.year{
+    font-size: 28px;
+    font-weight: 800;
+    opacity: 30%;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.curric{
+    h3{
+        margin-top: 40px;
+        font-size: 42px;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 40px;
+            background: $yellow;
+            margin-right: 10px;
+            position: relative;
+            top: 6px;
+        }
+    }
+    h4{
+        font-size: 22px;
+        opacity: 85%;
+        margin-bottom: 20px;
+    }
+    div div{
+        position: relative;
+        left: -55px;
+    }
+    .btn:first-child{
+        margin-bottom: 20px;
+    }
+}
+
+.btn{
+    background: #DFDFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 60px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 1px rgba($color: #000000, $alpha: .16);
+    font-size: 22px;
+}
+
+.turq::after{
+    background: $turq;
 }

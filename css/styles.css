@@ -15,6 +15,12 @@ ul {
   list-style: none;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   max-width: 1366px;
   margin-left: auto;
@@ -53,6 +59,7 @@ nav ul li {
 
 main {
   margin-top: 60px;
+  margin-bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,9 +78,164 @@ main div {
           flex: 7;
 }
 
+.section-margin {
+  margin-bottom: 200px;
+}
+
 h1 {
   font-size: 82px;
   max-width: 600px;
   line-height: 1.1em;
   margin-top: 85px;
+}
+
+.overTitle {
+  color: #3A3835;
+  opacity: 60%;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 1em;
+  margin-bottom: 40px;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #E1AD64;
+}
+
+.exp-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.exp-cards h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.exp-cards h3::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 6px;
+  background: #E1AD64;
+  margin-bottom: 10px;
+}
+.exp-cards .card {
+  margin: 10px;
+  max-width: 442px;
+}
+.exp-cards .card p {
+  opacity: 85%;
+  margin-bottom: 10px;
+  height: 76px;
+}
+
+.exp-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -5px;
+}
+.exp-actions div {
+  background: #DFDFDF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+  margin: 5px;
+}
+
+.card {
+  background-color: #F7F6F3;
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.card:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.16);
+}
+
+.year {
+  font-size: 28px;
+  font-weight: 800;
+  opacity: 30%;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.curric h3 {
+  margin-top: 40px;
+  font-size: 42px;
+}
+.curric h3::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 40px;
+  background: #E1AD64;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+.curric h4 {
+  font-size: 22px;
+  opacity: 85%;
+  margin-bottom: 20px;
+}
+.curric div div {
+  position: relative;
+  left: -55px;
+}
+.curric .btn:first-child {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 211px;
+  height: 60px;
+  border-radius: 8px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16);
+  font-size: 22px;
+}
+
+.turq::after {
+  background: #74A5AF;
 }
