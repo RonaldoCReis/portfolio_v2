@@ -151,6 +151,7 @@ h2::after {
           flex: 1;
   min-width: 350px;
   padding: 0;
+  overflow: hidden;
 }
 .exp-cards .card > div {
   padding: 30px;
@@ -411,7 +412,7 @@ section {
 .book {
   position: absolute;
   z-index: 2;
-  right: -600px;
+  right: -800px;
   top: 200px;
 }
 
@@ -508,5 +509,176 @@ section {
 
   .conhecimentos .col h3 {
     font-size: 32px;
+  }
+}
+.img-proj {
+  position: absolute;
+  border-radius: 8px;
+  left: -600px;
+  top: 0;
+}
+
+.proj1 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop1 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop1 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop1 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+@keyframes scrollTop1 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1000px;
+  }
+}
+.proj2 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop2 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop2 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop2 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -398px;
+  }
+}
+
+@keyframes scrollTop2 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -398px;
+  }
+}
+.proj3 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop3 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop3 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop3 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -480px;
+  }
+}
+
+@keyframes scrollTop3 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -480px;
+  }
+}
+.proj4 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop4 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop4 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop4 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -960px;
+  }
+}
+
+@keyframes scrollTop4 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -960px;
+  }
+}
+.proj5 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop5 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop5 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop5 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -400px;
+  }
+}
+
+@keyframes scrollTop5 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -400px;
+  }
+}
+.proj6 {
+  -webkit-animation: scrollRight 0.6s forwards, scrollTop6 10s 1s 1, scrollLeft 0.6s 10s forwards;
+          animation: scrollRight 0.6s forwards, scrollTop6 10s 1s 1, scrollLeft 0.6s 10s forwards;
+}
+
+@-webkit-keyframes scrollTop6 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+@keyframes scrollTop6 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1000px;
+  }
+}
+@-webkit-keyframes scrollRight {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes scrollRight {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-webkit-keyframes scrollLeft {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -600px;
+  }
+}
+@keyframes scrollLeft {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -600px;
   }
 }

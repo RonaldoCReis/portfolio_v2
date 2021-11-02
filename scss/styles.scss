@@ -130,6 +130,7 @@ h2{
         // max-width: 442px;
         min-width: 350px;
         padding: 0;
+        overflow: hidden;
         & > div{
             padding: 30px;
         }
@@ -367,7 +368,7 @@ section{
 .book{
     position: absolute;
     z-index: 2;
-    right: -600px;
+    right: -800px;
     top: 200px;
 }
 
@@ -456,5 +457,45 @@ section{
     }
     .conhecimentos .col h3{
         font-size: 32px;
+    }
+}
+
+.img-proj{
+    position: absolute;
+    border-radius: 8px;
+    left: -600px;
+    top: 0;
+}
+$scrolls: -1000px, -398px, -480px, -960px, -400px, -1000px;
+@for $i from 1 through 6 {
+    .proj#{$i}{
+        animation: scrollRight .6s forwards, scrollTop#{$i} 10s 1s 1, scrollLeft .6s 10s forwards;
+    }
+    @keyframes scrollTop#{$i} {
+        from{
+            top: 0;
+        }
+        to{
+            top: nth($scrolls, $i);
+        }
+    }
+}
+
+@keyframes scrollRight {
+    from{
+        left: -600px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+
+@keyframes scrollLeft {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -600px;
     }
 }
