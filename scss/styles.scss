@@ -3,6 +3,10 @@ $yellow: #E1AD64;
 $turq: #74A5AF;
 $pink: #EAB6C7;
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +34,7 @@ ul{
 
 .d-flex{
     display: flex;
+    position: relative;
 }
 
 .container{
@@ -337,7 +342,7 @@ h2{
 
 footer{
     background: #0F0E0E;
-    padding: 30px;
+    padding: 30px 20px;
     *{
         color: #fff;
         opacity: 85%;
@@ -498,4 +503,19 @@ $scrolls: -1000px, -398px, -480px, -960px, -400px, -1000px;
     to{
         left: -600px;
     }
+}
+
+.comp{
+    z-index: 2;
+}
+
+.compImg{
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    border-radius: 8px;
+    width: 180px;
+    height: 133px;
+    object-fit: cover;
+    // display: none;
 }

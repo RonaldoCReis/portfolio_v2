@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +32,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .container {
@@ -378,7 +383,7 @@ h2::after {
 
 footer {
   background: #0F0E0E;
-  padding: 30px;
+  padding: 30px 20px;
 }
 footer * {
   color: #fff;
@@ -681,4 +686,18 @@ section {
   to {
     left: -600px;
   }
+}
+.comp {
+  z-index: 2;
+}
+
+.compImg {
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  border-radius: 8px;
+  width: 180px;
+  height: 133px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
