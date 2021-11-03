@@ -1,3 +1,8 @@
+var lazyLoad = new LazyLoad({
+    elements_selector: ".lazy",
+    unobserve_entered: true // Stop observing .horizContainer(s) after they entered
+});
+
 function imgScroll(){
     var controller = new ScrollMagic.Controller();
     var scene1 = new ScrollMagic.Scene({triggerElement: "main", duration: 2000})

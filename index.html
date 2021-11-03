@@ -46,7 +46,7 @@
         </div>
     </main>
     <section id="experiencia" class="container section-margin">
-        <img id="coffee" class="coffee" src="/img/coffee.png" alt="Xicara de café">
+        <img id="coffee" class="coffee lazy" data-src="/img/coffee.png" alt="Xicara de café">
         <p class="overTitle">Conheça mais sobre mim</p>
         <h2>Experiência</h2>
         <div class="exp-cards">
@@ -89,7 +89,7 @@
                     <span class="year">2020</span>
                 </div>
                 <a target="_blank" href="http://bikcraft.ronaldo-reis.com/">
-                    <img class="img-proj" src="/img/bikcraft.png" alt="bikcraft">
+                    <img class="img-proj lazy" data-src="/img/bikcraft.png" alt="bikcraft">
                 </a>
             </div>
             <div class="card" data-card="3">
@@ -115,7 +115,7 @@
                     <span class="year">2020</span>
                 </div>
                 <a target="_blank" href="http://littleinvest.ronaldo-reis.com/">
-                    <img class="img-proj" src="/img/littleInvest.png" alt="littleInvest">
+                    <img class="img-proj lazy" data-src="/img/littleInvest.png" alt="littleInvest">
                 </a>
             </div> 
             <div class="card" data-card="4">
@@ -141,7 +141,7 @@
                     <span class="year">2020</span>
                 </div>
                 <a target="_blank" href="http://portfolio.ronaldo-reis.com/">
-                    <img class="img-proj" src="/img/port.png" alt="portfolio">
+                    <img class="img-proj lazy" data-src="/img/port.png" alt="portfolio">
                 </a>
             </div>
             <div class="card" data-card="5">
@@ -167,7 +167,7 @@
                     <span class="year">2020 - 2021</span>
                 </div>
                 <a rel="nofollow external" target="_blank" href="https://www.imovelguide.com.br/">
-                    <img class="img-proj" src="/img/guide.png" alt="portfolio">
+                    <img class="img-proj lazy" data-src="/img/guide.png" alt="portfolio">
                 </a>
             </div>
             <div class="card" data-card="6">
@@ -197,7 +197,7 @@
             <h3>Quer saber mais?</h3>
             <h4>Acesse meu GitHub ou faça o download do currículo </h4>
             <div class="d-flex">
-                <img class="y-comp" src="/img/yellowComp.png" alt="Computador amarelo">
+                <img class="y-comp lazy" data-src="/img/yellowComp.png" alt="Computador amarelo">
                 <div>
                     <a class="btn" rel="nofollow external" target="_blank" href="https://github.com/RonaldoCReis">GitHub</a>
                     <a class="btn" href="/files/ronaldo-reis.pdf" download>Currículo</a>
@@ -206,7 +206,7 @@
         </div>
     </section>
     <section id="conhecimentos" class="container">
-        <img id="plant" class="plant" src="/img/plant.png" alt="Cacto">
+        <img id="plant" class="plant lazy" data-src="/img/plant.png" alt="Cacto">
         <h2 class="turq">Conhecimentos</h2>
         <div class="conhecimentos">
             <div class="col">
@@ -252,8 +252,8 @@
                 <h3>Todos os cursos</h3>
                 <h4>Acesse meu LinkedIn e veja todos os certificados</h4>
                 <div class="d-flex">
-                    <img class="comp" src="/img/blueComp.png" alt="Computador amarelo">
-                    <img class="compImg" src="/img/linkedin.png" alt="Perfil linkedin">
+                    <img class="comp lazy" data-src="/img/blueComp.png" alt="Computador amarelo">
+                    <!-- <img class="compImg" src="/img/linkedin.png" alt="Perfil linkedin"> -->
                     <div>
                         <a class="btn" rel="nofollow external" target="_blank" href="https://www.linkedin.com/in/ronaldocreis/">LinkedIn</a>
                         <a class="btn" href="/files/ronaldo-reis.pdf" download>Currículo</a>
@@ -277,6 +277,7 @@
         <h3>Desenvolvido por Ronaldo Reis</h3>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
