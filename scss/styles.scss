@@ -32,8 +32,8 @@ ul{
     list-style: none;
 }
 
-.d-none{
-    display: none;
+.hide{
+    opacity: 0;
 }
 
 .d-flex{
@@ -203,6 +203,9 @@ h2{
             position: relative;
             top: 6px;
         }
+    }
+    img{
+        transition: .4s;
     }
     h4{
         font-size: 22px;
@@ -382,6 +385,20 @@ section{
 }
 
 
+.y-comp{
+    position: absolute;
+}
+.y-comp-btn{
+    margin-left: 286px;
+}
+
+
+.b-comp{
+    position: absolute;
+}
+.b-comp-btn{
+    margin-left: 302px;
+}
 
 @media only screen and (max-width: 1280px) and (min-width: 1150px) {
     .exp-cards .card p{
@@ -460,6 +477,12 @@ section{
                 left: 0;
             }
         }
+    }
+    .y-comp-btn{
+        margin-left: 0px;
+    }
+    .b-comp-btn{
+        margin-left: 0px;
     }
     .conhecimentos .col .card{
         width: 270px;

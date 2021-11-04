@@ -35,33 +35,33 @@ cards.forEach(card =>{
 
 
 function showGit(){
-    document.querySelector('.github').classList.remove('d-none')
-    document.querySelector('.yellowComp').classList.add('d-none')
+    document.querySelector('.github').classList.remove('hide')
+    document.querySelector('.yellowComp').classList.add('hide')
 }
 
 function showYellowCv(){
-    document.querySelector('.yellowcv').classList.remove('d-none')
-    document.querySelector('.yellowComp').classList.add('d-none')
+    document.querySelector('.yellowcv').classList.remove('hide')
+    document.querySelector('.yellowComp').classList.add('hide')
 }
 
 function resetYellow(){
-    document.querySelector('.github').classList.add('d-none')
-    document.querySelector('.yellowcv').classList.add('d-none')
-    document.querySelector('.yellowComp').classList.remove('d-none')
+    document.querySelector('.github').classList.add('hide')
+    document.querySelector('.yellowcv').classList.add('hide')
+    document.querySelector('.yellowComp').classList.remove('hide')
 }
 
 function showLinkedin(){
-    document.querySelector('.linkedin').classList.remove('d-none')
-    document.querySelector('.blueComp').classList.add('d-none')
+    document.querySelector('.linkedin').classList.remove('hide')
+    document.querySelector('.blueComp').classList.add('hide')
 }
 
 function showBlueCv(){
-    document.querySelector('.blueCv').classList.remove('d-none')
-    document.querySelector('.blueComp').classList.add('d-none')
+    document.querySelector('.blueCv').classList.remove('hide')
+    document.querySelector('.blueComp').classList.add('hide')
 }
 
 function resetBlue(){
-    document.querySelector('.linkedin').classList.add('d-none')
-    document.querySelector('.blueCv').classList.add('d-none')
-    document.querySelector('.blueComp').classList.remove('d-none')
+    document.querySelector('.linkedin').classList.add('hide')
+    document.querySelector('.blueCv').classList.add('hide')
+    document.querySelector('.blueComp').classList.remove('hide')
 }

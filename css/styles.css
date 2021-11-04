@@ -28,8 +28,8 @@ ul {
   list-style: none;
 }
 
-.d-none {
-  display: none;
+.hide {
+  opacity: 0;
 }
 
 .d-flex {
@@ -230,6 +230,10 @@ h2::after {
   position: relative;
   top: 6px;
 }
+.curric img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 .curric h4 {
   font-size: 22px;
   opacity: 85%;
@@ -425,6 +429,22 @@ section {
   top: 200px;
 }
 
+.y-comp {
+  position: absolute;
+}
+
+.y-comp-btn {
+  margin-left: 286px;
+}
+
+.b-comp {
+  position: absolute;
+}
+
+.b-comp-btn {
+  margin-left: 302px;
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 1150px) {
   .exp-cards .card p {
     min-height: 94.44px;
@@ -510,6 +530,14 @@ section {
   }
   .curric div div {
     left: 0;
+  }
+
+  .y-comp-btn {
+    margin-left: 0px;
+  }
+
+  .b-comp-btn {
+    margin-left: 0px;
   }
 
   .conhecimentos .col .card {
