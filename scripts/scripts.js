@@ -5,8 +5,8 @@ var lazyLoad = new LazyLoad({
 
 function imgScroll(){
     var controller = new ScrollMagic.Controller();
-    var scene1 = new ScrollMagic.Scene({triggerElement: "main", duration: 2000})
-    .setTween("#coffee", {top: '300px', transform: 'rotate(10deg)', right: '-12vw'}) // the tween durtion can be omitted and defaults to 1
+    var scene1 = new ScrollMagic.Scene({triggerElement: "h1", duration: 1500})
+    .setTween("#coffee", {transform: 'rotate(10deg)', right: '-0vw'}) // the tween durtion can be omitted and defaults to 1
     // .addIndicators({name: "2 (duration: 2000)"}) // add indicators (requires plugin)
     .addTo(controller);
 

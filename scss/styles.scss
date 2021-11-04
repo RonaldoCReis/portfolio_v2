@@ -365,10 +365,22 @@ footer{
 section{
     position: relative;
 }
-.coffee{
+
+.over-hidden{
+    overflow: hidden;
+}
+
+.coffee-div{
     position: absolute;
-    top: -100px;
-    right: -15vw;
+    right: -0px;
+    top: 920px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.coffee{
+    position: relative;
+    right: -10vw;
     transform: rotate(15deg);
 }
 
@@ -377,11 +389,19 @@ section{
     top: 368px;
     left: -300px;
 }
-.book{
+
+.book-div{
     position: absolute;
+    right: -0px;
+    top: 0px;
+    overflow: hidden;
+    top: 200px;
+}
+
+.book{
+    position: relative;
     z-index: 2;
     right: -800px;
-    top: 200px;
 }
 
 
