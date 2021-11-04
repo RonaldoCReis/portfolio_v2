@@ -25,12 +25,14 @@ imgScroll();
 const cards = document.querySelectorAll('.exp-cards .card')
 cards.forEach(card =>{
     const img = card.querySelector('img')
-    card.addEventListener('mouseenter', ()=>{
-        img.classList.add(`proj${card.dataset.card}`)
-    })
-    card.addEventListener('mouseleave', ()=>{
-        img.classList.remove(`proj${card.dataset.card}`)
-    })
+    if (img) {
+        card.addEventListener('mouseenter', ()=>{
+            img.classList.add(`proj${card.dataset.card}`)
+        })
+        card.addEventListener('mouseleave', ()=>{
+            img.classList.remove(`proj${card.dataset.card}`)
+        })
+    }
 })
 
 
