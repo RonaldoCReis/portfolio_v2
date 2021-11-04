@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;

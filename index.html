@@ -197,10 +197,12 @@
             <h3>Quer saber mais?</h3>
             <h4>Acesse meu GitHub ou faça o download do currículo </h4>
             <div class="d-flex">
-                <img class="y-comp lazy" data-src="/img/yellowComp.png" alt="Computador amarelo">
+                <img class="y-comp lazy yellowComp" data-src="/img/yellowComp.png" alt="Computador amarelo">
+                <img class="y-comp d-none github" src="/img/github.png" alt="Computador amarelo">
+                <img class="y-comp d-none yellowcv" src="/img/yellowcv.png" alt="Computador amarelo">
                 <div>
-                    <a class="btn" rel="nofollow external" target="_blank" href="https://github.com/RonaldoCReis">GitHub</a>
-                    <a class="btn" href="/files/ronaldo-reis.pdf" download>Currículo</a>
+                    <a class="btn" onmouseenter="showGit()" onmouseleave="resetYellow()" rel="nofollow external" target="_blank" href="https://github.com/RonaldoCReis">GitHub</a>
+                    <a class="btn" onmouseenter="showYellowCv()" onmouseleave="resetYellow()" href="/files/ronaldo-reis.pdf" download>Currículo</a>
                 </div>
             </div>
         </div>
@@ -252,11 +254,13 @@
                 <h3>Todos os cursos</h3>
                 <h4>Acesse meu LinkedIn e veja todos os certificados</h4>
                 <div class="d-flex">
-                    <img class="comp lazy" data-src="/img/blueComp.png" alt="Computador amarelo">
+                    <img class="comp lazy blueComp" data-src="/img/blueComp.png" alt="Computador azul">
+                    <img class="comp d-none linkedin" src="/img/linkedin.png" alt="Computador azul">
+                    <img class="comp d-none blueCv" src="/img/bluecv.png" alt="Computador azul">
                     <!-- <img class="compImg" src="/img/linkedin.png" alt="Perfil linkedin"> -->
                     <div>
-                        <a class="btn" rel="nofollow external" target="_blank" href="https://www.linkedin.com/in/ronaldocreis/">LinkedIn</a>
-                        <a class="btn" href="/files/ronaldo-reis.pdf" download>Currículo</a>
+                        <a class="btn" onmouseenter="showLinkedin()" onmouseleave="resetBlue()" rel="nofollow external" target="_blank" href="https://www.linkedin.com/in/ronaldocreis/">LinkedIn</a>
+                        <a class="btn" onmouseenter="showBlueCv()" onmouseleave="resetBlue()" href="/files/ronaldo-reis.pdf" download>Currículo</a>
                     </div>
                 </div>
             </div>

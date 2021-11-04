@@ -34,3 +34,34 @@ cards.forEach(card =>{
 })
 
 
+function showGit(){
+    document.querySelector('.github').classList.remove('d-none')
+    document.querySelector('.yellowComp').classList.add('d-none')
+}
+
+function showYellowCv(){
+    document.querySelector('.yellowcv').classList.remove('d-none')
+    document.querySelector('.yellowComp').classList.add('d-none')
+}
+
+function resetYellow(){
+    document.querySelector('.github').classList.add('d-none')
+    document.querySelector('.yellowcv').classList.add('d-none')
+    document.querySelector('.yellowComp').classList.remove('d-none')
+}
+
+function showLinkedin(){
+    document.querySelector('.linkedin').classList.remove('d-none')
+    document.querySelector('.blueComp').classList.add('d-none')
+}
+
+function showBlueCv(){
+    document.querySelector('.blueCv').classList.remove('d-none')
+    document.querySelector('.blueComp').classList.add('d-none')
+}
+
+function resetBlue(){
+    document.querySelector('.linkedin').classList.add('d-none')
+    document.querySelector('.blueCv').classList.add('d-none')
+    document.querySelector('.blueComp').classList.remove('d-none')
+}
